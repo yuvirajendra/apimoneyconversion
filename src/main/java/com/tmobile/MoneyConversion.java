@@ -8,6 +8,13 @@ public class MoneyConversion {
     public MoneyConversion() {
     }
 
+    // Handling Double digit
+    public String doubleAmount(double amount) {
+        long dollar = (long) amount;
+        int cent = (int) Math.round(amount - dollar) * 100;
+        return "";
+    }
+
     // Main Logic
     public String amountToWordConversion(int input) {
         if (input == 0)
